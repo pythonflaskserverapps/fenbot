@@ -9,3 +9,7 @@ https://github.com/Elucidation/tensorflow_chessbot
 ## Note
 
 Code is optimized for running on Heroku, it won't necessarily work as expected locally.
+
+## Example implementation:
+
+https://hidden-ocean-70142.herokuapp.com/
