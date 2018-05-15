@@ -25,7 +25,7 @@ def error():
     if len(parts) == 1:        
         return render_template("fenbotfailed.html", err = err, content = content)
     else:        
-        fen = parts[1].split("\r")[0]        
+        fen = parts[1].split("\n")[0]        
         print(fen)
         return redirect("https://lichess.org/analysis/standard/"+fen)        
 
