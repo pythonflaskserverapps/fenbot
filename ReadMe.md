@@ -1,7 +1,7 @@
-# Minimal Python / Flask server for Heroku
+# Chess FEN bot
 
-Provides a minimal setup that runs as a Python / Flask server both locally and on Heroku.
+Recognizes FEN on arbitrary screenshot that contains a chess board and opens an analysis board with that position.
 
-## Note
+Neural network used for image recognition:
 
-All files with `.bat` extension are convenience for Windows development. You can delete them without any loss of server functionality.
+https://github.com/Elucidation/tensorflow_chessbot
