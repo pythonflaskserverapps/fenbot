@@ -47,8 +47,7 @@ def index():
         if file:            
             filename = file.filename
             parts = filename.split(".")            
-            filename = uuid.uuid1().hex + "." + parts[-1]
-            filename="x.jpg"
+            filename = uuid.uuid1().hex + "." + parts[-1]            
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))            
             return json.dumps({
                 "success":True,
