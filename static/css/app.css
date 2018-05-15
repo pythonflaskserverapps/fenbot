@@ -1,0 +1,20 @@
+.gridcontainer{
+    display: grid;
+    grid-template-rows: 100px auto;
+    grid-template-columns: 200px auto;
+}
+
+.header{
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: aqua;
+}
+
+.leftpanel{
+    grid-area: 2 / 1 / 2 / 2;
+    background-color: greenyellow;
+}
+
+.content{
+    grid-area: 2 / 2 / 2 / 3;
+    background-color: palegoldenrod;
+}

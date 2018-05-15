@@ -1,0 +1,19 @@
+Oops, this does not look like a chessboard...
+
+<pre>
+process status:
+
+{{ err }}
+
+process output:
+
+{{ content }}
+</pre>
+
+<script>
+    console.log("waiting")
+    setTimeout(function(){
+        console.log("timeout")
+        document.location.href="http://localhost:5000"
+    },5000)
+</script>

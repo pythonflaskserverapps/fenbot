@@ -1,0 +1,6 @@
+
+/upload/*
+!/upload/ReadMe.md
+
+__pycache__/
+
