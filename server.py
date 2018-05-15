@@ -19,7 +19,7 @@ def error():
     (output, err) = process.communicate()
     exit_code = process.wait()
     errf = err.decode("utf-8")
-    err = "exit code:\n\n{} err:\n\n{}".format(exit_code, errf)
+    err = "exit code:\n\n{}\n\nerr:\n\n{}".format(exit_code, errf)
     content = output.decode("utf-8")        
     parts = content.split("Predicted FEN: ")    
     if len(parts) == 1:        
