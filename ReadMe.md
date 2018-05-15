@@ -5,3 +5,7 @@ Recognizes FEN on arbitrary screenshot that contains a chess board and opens an 
 Neural network used for image recognition:
 
 https://github.com/Elucidation/tensorflow_chessbot
+
+## Note
+
+Code is optimized for running on Heroku, it won't necessarily work as expected locally.
