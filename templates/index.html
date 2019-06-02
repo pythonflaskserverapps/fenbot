@@ -9,10 +9,18 @@
 
 <body>
     <div class="gridcontainer">
-        <div class="header"></div>
-        <div class="leftpanel"></div>
+        <div class="header">Recognize and analyze chess board screenshot.</div>        
         <div class="content">
-                {{ content }}
+            <div id="drop-area">
+                <form class="my-form">
+                    <p class="processmsg"></p>
+                <p>Choose a file</strong><span class="box__dragndrop"> or drag it here</span>.</p>
+                  <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                  <label class="button" for="fileElem">Select a file</label>
+                </form>
+                <progress id="progress-bar" max=100 value=0></progress>
+                <div id="gallery" /></div>
+              </div>              
         </div>
     </div>    
     <script src="static/js/app.js"></script>

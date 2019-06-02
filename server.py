@@ -36,8 +36,8 @@ def success():
 @app.route("/", methods=['GET', 'POST'])
 def index():    
     #return render_template("index.html", content = "fenbot")        
-    if request.method == 'POST':        
-        print("request files", request.files.getlist("files[]"))        
+    if request.method == 'POST':            
+        print("request files", request.files.getlist("files[]"))                
         for file in request.files.getlist("files[]"):
             if len(file.filename) > 0:
                 print("found", file.filename)                
@@ -54,7 +54,13 @@ def index():
             "error":"no file"
         })
     else:
-        print("normal")
-        if not ( request.args.get("manual", None) is None ):
-            return render_template("upload_manual.html")    
-        return render_template("upload_auto.html")
+        useragent = request.headers.get("User-Agent", "unknown")
+        print("user agent", useragent)
+        if "Chrome/" in useragent:
+            print("normal")
+            if not ( request.args.get("manual", None) is None ):
+                return render_template("upload_manual.html")    
+            return render_template("upload_auto.html")
+        else:
+            print("fallback")
+            return render_template("index.html")
