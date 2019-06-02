@@ -1,6 +1,6 @@
 # Chess FEN bot
 
-Recognizes FEN on arbitrary screenshot that contains a chess board and opens an analysis board with that position.
+Recognizes FEN on arbitrary screenshot that contains a chess board and opens a lichess analysis board with that position.
 
 Neural network used for image recognition:
 
@@ -12,4 +12,4 @@ Code is optimized for running on Heroku, it won't necessarily work as expected l
 
 ## Example implementation:
 
-https://hidden-ocean-70142.herokuapp.com/
+https://img2lichess.herokuapp.com/
